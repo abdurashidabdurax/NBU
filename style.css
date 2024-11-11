@@ -3,55 +3,53 @@ body{
     font-weight: 500;
 }
 
-.nav-bar {
-    display: inline-flex;
-    gap: 20px;
-    margin-left: 20px;
+.nav-bar{
+    padding: 5px 10px;
+    display: flex;
+    gap: 25px;
+    margin: 0px 35px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.header-content {
-    /* margin-left: 20px; */
+.logo{
+    max-width: 70px;
 }
 
-.logo {
-    width: 80px;
-    height: 110px;
+.logo img{
+    width: 100%;
+    height: auto;
 }
 
-.cont1 {
+.cont1{
     display: flex;
     justify-content: space-between;
-    gap: 50px;
-    font: 14px;
-    margin: 15px, 0px, 0px;
+    gap: 95px;
 }
 
-.menu {
+.menu{
     display: flex;
-    justify-content: space-around;
-    gap: 17px;
+    gap: 15px;
+}
+
+.menu p{
     font-size: 12px;
-    font-weight: 600;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-    color: rgb(160, 160, 160);
-    font-style: normal;
-    margin-top: 7px;
+    color: #848e9f;
+    font-weight: bolder;  
 }
 
 .menu p:hover {
     color: #009EA7;
+    cursor: pointer;
 }
 
-.menu1 {
+.glasses{
+    margin-top: 10px;
+}
+
+.menu1{
     display: flex;
-    gap: 20px;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-}
-
-.sotuv{
-    color: rgb(160, 160, 160);
+    gap: 15px;
+    font-size: 15px;
 }
 
 .cl {
@@ -59,21 +57,31 @@ body{
     grid-template-columns: 1fr;
 }
 
-.glasses {
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 60px;
+.sotuv{
+    color: #848e9f;
+}
+
+.menu2 {
+    font-size: 18px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    color: black;
+}
+
+.menu2 p:hover {
+    color: #009EA7;
 }
 
 .img {
-    width: 25px;
-    height: 25px;
-    margin-top: 13px;
+    width: 23px;
+    height: 23px;
+    margin-top: 12px;
 }
 
 .dropdown {
     display: inline-block;
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 15px;
 }
 
@@ -82,14 +90,11 @@ body{
     text-decoration: none;
     padding: 10px;
     color: black;
-    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .dropdown .dropdown-content {
     position: absolute;
     display: none;
-    /* min-width: 500px; */
-    /* box-shadow: 2px, 2px, 5px hsl(0, 0%, 0%, 0.8); */
     box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     text-align: center;
@@ -103,24 +108,74 @@ body{
 
 .dropdown a:hover {
     color: #009EA7;
-
 }
 
-
-.menu2 {
-    font-size: 18px;
-    font-weight: bolder;
+.dropdown-phone{
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+    border: 2px solid #e4bd63;
+    padding-right: 5px;
+    border-radius: 8px;
+    margin-top: 3px;
 }
 
-.menu2 p:hover {
-    color: #009EA7;
+.dropdown-phone img{
+    width: 30px;
+    height: 30px;
+    padding-top: 6px;
 }
+
+.dropdown-phone p{
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+.dropdown-phone:hover{
+    background-color: #e4bd63;
+    color: white;
+    
+}
+
+.dropdown-phone img:hover{
+    filter: brightness(0) invert(1);
+}
+
+.dropdown .dropdown-content-phone {
+    position: absolute;
+    display: none;
+    box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 0px 20px;
+}
+
+.dropdown:hover .dropdown-content-phone {
+    margin-left: -100px;
+    display: block;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.dropdown:hover .dropdown-content-phone a:first-child{
+    margin-top: 20px;
+    border: 2px solid #e4bd63;
+    border-radius: 10px;
+    text-align: center;
+    font-size: larger;
+}
+
+.dropdown:hover .dropdown-content-phone a:first-child:hover{
+    background-color: #e4bd63;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content-phone a{
+    font-size: small; 
+    font-weight: bolder;  
+}
+
+
+
 
 .main{
     background-color: whitesmoke;
@@ -134,24 +189,7 @@ body{
 }
 
 .kurs{
-    display: flex;
-    justify-content: center;
-    gap: 29px;
-}
-
-.kurs a{
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: 700;
-    color: black;
-}
-
-.kurs a span{
-    color: #009EA7;
-}
-
-.kurs a:hover{
-    color: #009EA7;
+    display: none;
 }
 
 .currency{
@@ -160,14 +198,9 @@ body{
     gap: 50px;
 }
 
-/* .exchange{
-    margin-right: 50px;
-} */
-
 table{
     width: 100%;
     border-collapse: collapse;
-    /* border-spacing: 0 7px; */
 }
 
 .currencyBuySell:hover{
@@ -181,10 +214,6 @@ table{
     color: #003366;
     border-bottom: 2px solid #003366;
 }
-
-/* .txt{
-    text-align: right;
-} */
 
 th, td {
     padding: 20px;
@@ -221,7 +250,6 @@ th, td img {
     font-size: 17px;
     margin: 0;
 }
-
 
 .currencyBuySell th:first-child,
 .currencyBuySell td:first-child { 
@@ -271,8 +299,6 @@ th, td img {
 }
 
 #result{
-    /* height: 40px;
-    width: 300px; */
     background-color: #efefef;
     border-radius: 5px;
     margin-top: 10px;
@@ -315,7 +341,7 @@ th, td img {
 
 .calendar-day:hover {
     background-color: #009EA7;
-    border-radius: 80px;
+    border-radius: 50%;
     color: white;
 }
 
@@ -356,43 +382,134 @@ th, td img {
     cursor: pointer;
 }
 
-.media-card{
-    display: flex;
-    justify-content: space-between;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    
+    margin-top: 10px;
 }
 
-.tg-card{
-    background-color: white;
+.telegram-section {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 50px;
 }
 
-.tg-card h1{
-    text-align: start;
-    font-size: 300px;
-    margin: 0 0 17px;
+.telegram-section h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: #1a1a1a;
 }
 
-.app-card{
-    background-color: chocolate;
+.telegram-section p {
+    font-size: 17.5px;
+    color: #000000;
+    margin-bottom: 32px;
+    line-height: 1.5;
+}
+
+.telegram-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background: white;
+    border: 2px solid #e4bd63;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.telegram-button:hover {
+    background: #e4bd63;
+    color: white;
+}
+
+.telegram-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    fill: currentColor;
+}
+
+.tg{
+    padding-right: 10px;
+}
+
+.app-section {
+    background: #003366;
+    padding: 40px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.app-section h2{
+    font-size: 32px;
+}
+
+.store-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 100px;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.store-button {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    background: transparent;
+    border: 2px solid #e4bd63;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.store-button:hover {
+    background: #e4bd63;
+}
+
+.store-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    object-fit: contain;
+}
+
+.app-preview {
+    position: absolute;
+    right: -40px;
+    bottom: -40px;
+    width: 300px;
+    height: auto;
+    transform: rotate(-5deg);
+}
+
+.display-card{
+    display: flex;
+    gap: 50px;
+}
+
+.board-phone{
+    width: 200px;
 }
 
 
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
 
 .footer {
     padding: 48px 24px;
@@ -455,8 +572,6 @@ body {
     transform: scaleX(1); 
     transform-origin: bottom left; 
 }
-
-
 
 .contact-box {
     background-color: #f0f9ff;
@@ -545,6 +660,14 @@ body {
 }
 
 
+.hamburger{
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+
 
 @media (max-width: 1024px) {
     .footer-content {
@@ -564,131 +687,87 @@ body {
     }
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-top: 10px;
-}
-
-.telegram-section {
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    border: 1px solid #ddd;
-}
-
-.telegram-section h2 {
-    font-size: 32px;
-    margin-bottom: 16px;
-    color: #1a1a1a;
-}
-
-.telegram-section p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 32px;
-    line-height: 1.5;
-}
-
-.telegram-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 12px 24px;
-    background: white;
-    border: 2px solid #e4bd63;
-    border-radius: 8px;
-    color: black;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    font-weight: bold;
-}
-
-.telegram-button:hover {
-    background: #e4bd63;
-    color: white;
-}
-
-.telegram-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-    fill: currentColor;
-}
-
-.tg{
-    padding-right: 10px;
-}
-
-.app-section {
-    background: #003366;
-    padding: 40px;
-    border-radius: 12px;
-    position: relative;
-    overflow: hidden;
-    color: white;
-}
-
-
-
-
-.store-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 100px;
-    margin-bottom: 32px;
-    position: relative;
-}
-
-.store-button {
-    display: flex;
-    align-items: center;
-    padding: 12px 24px;
-    background: transparent;
-    border: 2px solid #e4bd63;
-    border-radius: 8px;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-weight: bold;
-}
-
-.store-button:hover {
-    background: #e4bd63;
-}
-
-.store-button img {
-    width: 24px;
-    height: 24px;
-    margin-right: 12px;
-    object-fit: contain;
-}
-
-.app-preview {
-    position: absolute;
-    right: -40px;
-    bottom: -40px;
-    width: 300px;
-    height: auto;
-    transform: rotate(-5deg);
-}
-
-.display-card{
-    display: flex;
-    gap: 50px;
-}
-
-.board-phone{
-    width: 200px;
-}
 
 @media (max-width: 768px) {
+    *{
+        margin: 0;
+    }
+
+    .nav-bar{
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu1 .dropdown{
+        display: block;
+    }
+
+    .logo{
+        width: 35px;
+        height: 52px;
+    }
+
+    .main h1{
+        font-size: 30px;
+        margin: 0px 0px;
+        padding-top: 20px;
+    }
+
+    .header-content{
+        display: none; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 0;
+        align-items: center;
+        background-color: white;
+        border: none;
+        color: #003366;
+    }
+
+    .header-content.active {
+        display: flex;
+    }
+
+    .currency{
+        flex-direction: column;
+    }
+
+    .main{
+        padding: 0px 25px;
+    }
+
+    .kurs a{
+        /* font-size: 20px; */
+        white-space: nowrap;
+        flex: 0 0 auto;
+    }
+
+    .kurs a span:hover{
+        color: #009EA7;
+    }
+
+    .kurs a:hover{
+        color: #009EA7;
+    }
+
+    table {
+        width: 100%;
+        display: block; 
+        overflow-x: auto; 
+        -webkit-overflow-scrolling: touch; 
+    }
+
     .container {
         grid-template-columns: 1fr;
     }
